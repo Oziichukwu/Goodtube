@@ -14,4 +14,10 @@ public interface VideoService {
     String uploadThumbnail(MultipartFile file, String videoId);
 
     VideoDto getVideoDetails(String videoId);
+
+    VideoDto likeVideo(String videoId);
+
+    VideoDto disLikeVideo(String videoId);
+
+    void incrementVideoCount(Video savedVideo);
 }
